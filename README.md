@@ -1,16 +1,47 @@
-# chat_bot_app
+# Chat Bot App
 
-A new Flutter project.
+![Chat Bot App](screenshots/app_screenshot.png)
+
+Chat Bot App is a fully functional chatbot application developed using Flutter, providing a seamless and responsive user interface. The app integrates with Dialogflow, allowing users to customize phrases and responses according to their preferences. Follow the steps below to set up your own Dialogflow agent and API key.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Create Dialogflow Agent:**
+   - Visit [Dialogflow](https://dialogflow.cloud.google.com/) and create a new agent.
+   - Set up your intents with desired phrases and responses.
 
-A few resources to get you started if this is your first Flutter project:
+2. **Set Up API Key:**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/).
+   - Create a new project and enable the Dialogflow API.
+   - Generate an API key for your project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. **Add API Key to Flutter App:**
+   - Place the JSON key file obtained from the Dialogflow API in the `assets` folder of your Flutter app.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. **Run the App:**
+   - Open the project in your preferred Flutter development environment.
+   - Run the app on an emulator or a physical device.
+
+## Features
+
+- **Dialogflow Integration:** Customize your chatbot's behavior and responses.
+- **Responsive UI:** The app is fully responsive, adapting to various screen sizes with the help of media queries.
+- **Animated Splash Screen:** Enjoy a visually appealing animated splash screen.
+
+## Screenshots
+
+Include screenshots of your app here.
+
+## Contributions
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the app.
+
+## License
+
+This project is free to use.
+
+## Acknowledgments
+
+A big thank you to the Flutter community for their support and contributions to this project! 🚀
+
+Happy Coding! 🤖💬
