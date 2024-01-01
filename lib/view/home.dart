@@ -1,5 +1,5 @@
 // home.dart
-import 'package:chat_bot_app/messages.dart';
+import 'package:chat_bot_app/view/messages.dart';
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
 
@@ -32,38 +32,41 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.grey.shade800,
         title: const Text('ItsElexenderBot'),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: MessagesScreen(messages: messages, showIntroMessage: showIntroMessage),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-              color: Colors.deepPurple,
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextField(
-                      controller: _controller,
-                      style: const TextStyle(color: Colors.white),
+      body: Column(
+        children: [
+          Expanded(
+            child: MessagesScreen(messages: messages, showIntroMessage: showIntroMessage),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+            //color: Colors.deepPurple,
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _controller,
+                    style: const TextStyle(color: Colors.white),
+                    decoration: const InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(30)), borderSide: BorderSide(color: Colors.white)), 
+                        label: Text('Elexender Bot')
+                      )
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {
-                      sendMessage(_controller.text);
-                      _controller.clear();
-                      setState(() {
-                        showIntroMessage = false;
-                      });
-                    },
-                    icon: const Icon(Icons.send),
-                  ),
-                ],
-              ),
+                IconButton(
+                  onPressed: () {
+                    sendMessage(_controller.text);
+                    _controller.clear();
+                    setState(() {
+                      showIntroMessage = false;
+                    });
+                  },
+                  icon: const Icon(Icons.send),
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

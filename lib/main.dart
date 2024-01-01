@@ -1,7 +1,6 @@
 // main.dart
+import 'package:chat_bot_app/view/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ItsElexenderBot',
       theme: ThemeData(brightness: Brightness.dark),
-      home: const Home(),
+      home: const SplashScreen(),
     );
   }
 }
