@@ -1,6 +1,6 @@
 # Chat Bot App
 
-![Chat Bot App](screenshots/app_screenshot.png)
+![Chat Bot App](https://github.com/Sikandar897/Its_chat_bot_app/blob/main/assets/images/ChatbotApp.jpg)
 
 Chat Bot App is a fully functional chatbot application developed using Flutter, providing a seamless and responsive user interface. The app integrates with Dialogflow, allowing users to customize phrases and responses according to their preferences. Follow the steps below to set up your own Dialogflow agent and API key.
 
@@ -30,8 +30,9 @@ Chat Bot App is a fully functional chatbot application developed using Flutter, 
 
 ## Screenshots
 
-Include screenshots of your app here.
-
+![1](https://github.com/Sikandar897/Its_chat_bot_app/blob/main/assets/images/image1.jpeg)
+![2](https://github.com/Sikandar897/Its_chat_bot_app/blob/main/assets/images/image3.jpeg)
+![3](https://github.com/Sikandar897/Its_chat_bot_app/blob/main/assets/images/image4.jpeg)
 ## Contributions
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the app.
