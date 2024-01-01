@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Text('Its Elexender Bot', style: GoogleFonts.anton(letterSpacing: .6 , color: Colors.white),), 
           SizedBox(height: height * 0.04,), 
           const SpinKitChasingDots(
-            color: Colors.blue,
+            color: Colors.white,
             size: 40,
           )
         ],
